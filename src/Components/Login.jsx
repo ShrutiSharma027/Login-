@@ -40,12 +40,11 @@ export default function Login() {
                                         />
                                     </div>
                                     <div className='d-flex justify-content-center'>
-                                        <p>OR</p>
+                                        <p>Don't have any account</p>
                                     </div>
                                     <div className=''>
-                                        {/* <a href='/signup'>Signup now</a> */}
-                                        {/* <NavLink to={'/signup'} className='signup rounded'>Signup now</NavLink> */}
-                                        <button className='signup rounded' >Signup now</button>
+                                        <NavLink to={'/signup'} className='signup rounded'>Signup now</NavLink>
+                                        {/* <button className='signup rounded' >Signup now</button> */}
                                     </div>
                                 </form>
                             </div>
