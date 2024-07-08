@@ -14,7 +14,7 @@ export default function Singup() {
                                     <img src={logo} alt="Logo" />
                                 </div>
                                 <div className="row d-flex justify-content-center align-items-center ">
-                                    <label className='d-flex justify-content-center'><strong>Log into your account</strong></label>
+                                    <label className='d-flex justify-content-center'><strong>Sign in to your account</strong></label>
                                 </div>
                                 <form>
                                     <label className="py-2">Enter Name</label>
