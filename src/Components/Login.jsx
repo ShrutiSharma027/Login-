@@ -30,7 +30,7 @@ export const Login = () => {
             <div className="container-fluid">
                 <div className="box">
                     <div className="row">
-                        <div className="col-sm-12 col-md-4 col-lg-4 ">
+                        <div className="col-sm-12 col-md-6 col-lg-5 ">
                             <div className="row margin">
                                 <div className="logo">
                                     <img src={logo} alt="Logo" />
@@ -46,9 +46,10 @@ export const Login = () => {
                                             name="email"
                                             type="email"
                                             placeholder="abc@gmail.com"
-                                            value={values.email}
+                                            // value={values.email}
                                             onChange={handleChange}
                                             onBlur={handleBlur}
+                                            size={40}
                                         />
                                     </label>
                                     <label className="text-danger">{errors.email && <p>{errors.email}</p>}</label>
@@ -58,9 +59,10 @@ export const Login = () => {
                                             className="form-control py-2 "
                                             type="password"
                                             placeholder="**************"
-                                            value={values.password}
+                                            // value={values.password}
                                             onChange={handleChange}
                                             onBlur={handleBlur}
+                                            size={40}
                                         />
                                     </label>
                                     <label className="text-danger">{errors.password && <p>{errors.password}</p>}</label>
@@ -68,7 +70,8 @@ export const Login = () => {
                                         <a href='#'>Forgot password?</a>
                                     </div>
                                     <div className='py-3'>
-                                        <input className='button rounded'
+                                        <input
+                                            className='button rounded'
                                             type="reset"
                                             value="Login"
                                         />
@@ -83,7 +86,7 @@ export const Login = () => {
                                 </form>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-8 col-lg-8 back logo bg d-none d-md-block">
+                        <div className="col-sm-12 col-md-6 col-lg-7 back logo bg d-none d-md-block">
                             <img className='image ' src={image} alt='Image' />
                         </div>
                     </div>

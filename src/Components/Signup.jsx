@@ -29,7 +29,7 @@ export default function Singup() {
             <div className="container-fluid">
                 <div className="box">
                     <div className="row">
-                        <div className=" col-xs-12 col-sm-12 col-md-5 col-lg-4">
+                        <div className=" col-xs-12 col-sm-12 col-md-6 col-lg-4">
                             <div className="row margin">
                                 <div className="logo">
                                     <img src={logo} alt="Logo" />
@@ -48,6 +48,7 @@ export default function Singup() {
                                             // value={values.name}
                                             onChange={handleChange}
                                             onBlur={handleBlur}
+                                            size={40}
                                         />
                                     </label>
                                     <label className="text-danger">{errors.name && <p>{errors.name}</p>}</label>
@@ -61,6 +62,7 @@ export default function Singup() {
                                             onChange={handleChange}
                                             onBlur={handleBlur}
                                             placeholder="abc@gmail.com"
+                                            size={40}
                                         />
                                     </label>
                                     <label className="text-danger">{errors.email && <p>{errors.email}</p>}</label>
@@ -70,10 +72,11 @@ export default function Singup() {
                                             id="password"
                                             name="password"
                                             type="password"
-                                            value={values.password}
+                                            // value={values.password}
                                             onChange={handleChange}
                                             onBlur={handleBlur}
                                             placeholder="**************"
+                                            size={40}
                                         />
                                     </label>
                                     <label className="text-danger">{errors.password && <p>{errors.password}</p>}</label>
@@ -81,7 +84,8 @@ export default function Singup() {
                                         <a href='#'>Forgot password?</a>
                                     </div>
                                     <div className='py-3'>
-                                        <input className='button rounded'
+                                        <input
+                                            className='button rounded'
                                             type="reset"
                                             value="Signup"
                                         />
@@ -96,7 +100,7 @@ export default function Singup() {
                                 </form>
                             </div>
                         </div>
-                        <div className="col-xs-12 col-sm-12 col-md-7 col-lg-8 back logo bg d-none d-md-block">
+                        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-8 back logo bg d-none d-md-block">
                             <img className='image ' src={image} alt='Image' />
                         </div>
                     </div>
