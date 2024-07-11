@@ -49,20 +49,20 @@ export const Login = () => {
                                             // value={values.email}
                                             onChange={handleChange}
                                             onBlur={handleBlur}
-                                            size={40}
+                                            size={60}
                                         />
                                     </label>
                                     <label className="text-danger">{errors.email && <p>{errors.email}</p>}</label>
                                     <label className="py-3">Enter Password
                                         <input
                                             id='password'
-                                            className="form-control py-2 "
+                                            className="form-control form-control-lg bg-light round required"
                                             type="password"
                                             placeholder="**************"
                                             // value={values.password}
                                             onChange={handleChange}
                                             onBlur={handleBlur}
-                                            size={40}
+                                            size={60}
                                         />
                                     </label>
                                     <label className="text-danger">{errors.password && <p>{errors.password}</p>}</label>

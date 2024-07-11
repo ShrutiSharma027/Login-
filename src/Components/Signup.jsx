@@ -1,9 +1,12 @@
 import logo from '/Images/logo.png'
 import image from '/Images/image.png'
 import { NavLink } from 'react-router-dom'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope'
+
+
 export default function Singup() {
     const initialValues = {
         name: '',
@@ -29,7 +32,7 @@ export default function Singup() {
             <div className="container-fluid">
                 <div className="box">
                     <div className="row">
-                        <div className=" col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                        <div className=" col-xs-12 col-sm-12 col-md-6 col-lg-5">
                             <div className="row margin">
                                 <div className="logo">
                                     <img src={logo} alt="Logo" />
@@ -38,9 +41,9 @@ export default function Singup() {
                                     <label className='d-flex justify-content-center'><strong>Sign in to your account</strong></label>
                                 </div>
                                 <form onSubmit={handleSubmit}>
-                                    <label className="py-2">Enter Name
+                                    <label className="py-2" >Enter Name
                                         <input
-                                            className="form-control py-2"
+                                            className="form-control form-control-lg bg-light round required"
                                             type="text"
                                             placeholder="Shruti Sharma"
                                             id="name"
@@ -48,13 +51,14 @@ export default function Singup() {
                                             // value={values.name}
                                             onChange={handleChange}
                                             onBlur={handleBlur}
-                                            size={40}
+                                            size={60}
                                         />
+                                        {/* <FontAwesomeIcon icon={faEnvelope} /> */}
                                     </label>
                                     <label className="text-danger">{errors.name && <p>{errors.name}</p>}</label>
                                     <label className="py-2">Enter Email
                                         <input
-                                            className="form-control py-2"
+                                            className="form-control form-control-lg bg-light round required"
                                             id="email"
                                             name="email"
                                             type="email"
@@ -62,13 +66,13 @@ export default function Singup() {
                                             onChange={handleChange}
                                             onBlur={handleBlur}
                                             placeholder="abc@gmail.com"
-                                            size={40}
+                                            size={60}
                                         />
                                     </label>
                                     <label className="text-danger">{errors.email && <p>{errors.email}</p>}</label>
                                     <label className="py-3">Enter Password
                                         <input
-                                            className="form-control py-2 "
+                                            className="form-control form-control-lg bg-light round required"
                                             id="password"
                                             name="password"
                                             type="password"
@@ -76,7 +80,7 @@ export default function Singup() {
                                             onChange={handleChange}
                                             onBlur={handleBlur}
                                             placeholder="**************"
-                                            size={40}
+                                            size={60}
                                         />
                                     </label>
                                     <label className="text-danger">{errors.password && <p>{errors.password}</p>}</label>
@@ -100,7 +104,7 @@ export default function Singup() {
                                 </form>
                             </div>
                         </div>
-                        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-8 back logo bg d-none d-md-block">
+                        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-7 back logo bg d-none d-md-block">
                             <img className='image ' src={image} alt='Image' />
                         </div>
                     </div>
